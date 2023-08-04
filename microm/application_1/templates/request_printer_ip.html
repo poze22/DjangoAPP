@@ -1,0 +1,15 @@
+<!-- application_1/templates/application_1/request_printer_ip.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Printer IP Request</title>
+</head>
+<body>
+    <h1>Submit Printer IP Request</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit Request</button>
+    </form>
+</body>
+</html>
